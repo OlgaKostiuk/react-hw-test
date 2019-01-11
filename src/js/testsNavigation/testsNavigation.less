@@ -1,0 +1,45 @@
+.test-navigation-container {
+  margin: 20px auto 20px auto;
+  display: flex;
+
+  &__number {
+    color: #337ab7;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+  }
+
+  &__number.active{
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+  }
+}
+
+.status-bar {
+  display: flex;
+  justify-content: center;
+
+  &__check-btn {
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  &__check-btn.ready {
+    background-color: #5cb85c;
+    border: 1px solid #4cae4c;
+  }
+  &__check-btn.not-ready {
+    background-color: #d43f3a;
+    border: 1px solid #d43f3a;
+  }
+  &__status {
+    color: #31708f;
+    font-weight: 700;
+    padding: 6px 12px;
+  }
+}
+.status-bar div{
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,39 @@
+@navigatorHeight: 50px;
+
+.navigator {
+  background-color: #444588;
+  width: 100%;
+  height: @navigatorHeight;
+  display: flex;
+  justify-content: center;
+
+  &__nav-links {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__stub {
+    display: flex;
+    flex: 1;
+  }
+}
+
+.nav-links {
+  color: white;
+
+  &__link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+
+    &:hover {
+      color: red;
+    }
+
+    &.active {
+      color: black;
+    }
+  }
+}
